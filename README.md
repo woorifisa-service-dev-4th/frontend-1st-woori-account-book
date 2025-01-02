@@ -33,4 +33,4 @@
 - 구분선 : `line`
 
 ### 📍 UI Layout
-![main](https://github.com/user-attachments/assets/98477862-a123-470b-9d56-443d73e7374a)
+![main](https://github.com/user-attachments/assets/7e95b2d7-1089-4c1b-8d43-444b646287ea)
