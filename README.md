@@ -31,3 +31,6 @@
 - 글꼴색 : `font_color_{ }`
 - 배경색 : `bg_color_{ }`
 - 구분선 : `line`
+
+### 📍 UI Layout
+![main](https://github.com/user-attachments/assets/98477862-a123-470b-9d56-443d73e7374a)
