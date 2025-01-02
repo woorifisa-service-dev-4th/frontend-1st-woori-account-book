@@ -56,6 +56,10 @@
 
 </br>
 
+### 📍 color code
+<img width="177" alt="image" src="https://github.com/user-attachments/assets/2bab3c26-9e37-44af-b59b-a8a4e5a13e20" />
+
+
 ### 📍 UI Layout
 ![main](https://github.com/user-attachments/assets/88d9ae3e-d9a1-44f4-9971-31e373f51e13)
 
