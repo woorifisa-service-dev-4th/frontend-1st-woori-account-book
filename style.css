@@ -1,17 +1,25 @@
-
-html,body{
-    height: 100%;
+html,
+body {
     background-color: #0061ac;
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    height: 100%;
 }
 
 nav {
     width: 30%;
     height: 100%;
     background-color: white;
-    display: flex;
-    margin-left: -2%;
     margin-top: -0.55%;
     border-radius: 10px;
+}
+
+.layout_left_logo {
+    display: flex;
 }
 
 .img_logo {
@@ -19,7 +27,6 @@ nav {
     height: 55px;
     margin-left: 10%;
     margin-top: 5%;
-    float: left;
 }
 
 .layout_logo {
@@ -30,27 +37,23 @@ nav {
 }
 
 .container_left_bar {
-    float: left;
-    margin-top: 20%;
-    margin-left: -47%;
+    /* margin-top: 20%; */
+    /* margin-left: -47%; */
     font-weight: bold;
     font-size: 20px;
 }
 
-
 main {
     width: 60%;
     height: 35%;
-    float: right;
 }
 
 .layout_main {
     border: 1px solid #b9b9b9;
     border-radius: 30px;
     overflow: hidden;
-    float: right;
-    margin-right: 5%;
-    margin-top: -38%;
+    /* margin-right: 5%;
+    margin-top: -38%; */
 }
 
 table {
@@ -103,34 +106,33 @@ table {
 }
 
 /* footer 부분 */
-.layout_footer{
-    float: right;
+.layout_footer {
     width: 70%;
-    height:30%;
+    height: 30%;
     border: solid red;
     display: flex;
     align-items: stretch;
+    margin-top: -18%;
 }
-.text_tit{
+.text_tit {
     font-size: 32px;
-   
 }
-.container_graphwrap{
+.container_graphwrap {
     max-width: 90%;
     margin: 0 auto;
-    padding:20px;
-    flex-grow: 1;    
+    padding: 20px;
+    flex-grow: 1;
 }
-.container_graph{
+.container_graph {
     position: relative;
     height: 80%;
     margin-top: 15px;
 }
 
-.container_graph .container_x-axis{
+.container_graph .container_x-axis {
     display: flex;
     justify-content: space-around;
-    position: absolute; 
+    position: absolute;
     bottom: 0;
     height: 16px;
     left: -20px;
@@ -139,10 +141,10 @@ table {
     z-index: 2;
     list-style-type: none;
 }
-.container_graph .container_x-axis>li{
+.container_graph .container_x-axis > li {
     font-size: 20px;
 }
-.container_graph .container_bar{
+.container_graph .container_bar {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
@@ -154,16 +156,15 @@ table {
     text-align: center;
     z-index: 3;
 }
-.container_graph .container_bar>li{
-    flex-grow:1;
+.container_graph .container_bar > li {
+    flex-grow: 1;
     margin: 0 10px;
     list-style-type: none;
-    
 }
-.container_graph .container_bar > li span{
+.container_graph .container_bar > li span {
     display: inline-block;
     width: 80%;
     height: 100%;
     max-width: 80px;
-    background: #41AAFF;
+    background: #41aaff;
 }
