@@ -14,18 +14,18 @@ nav {
     width: 30%;
     height: 100%;
     background-color: white;
-    margin-top: -0.55%;
-    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .layout_left_logo {
     display: flex;
+    margin-left: 5%;
 }
 
 .img_logo {
     width: 55px;
     height: 55px;
-    margin-left: 10%;
     margin-top: 5%;
 }
 
@@ -37,12 +37,12 @@ nav {
 }
 
 .container_left_bar {
-    /* margin-top: 20%; */
-    /* margin-left: -47%; */
-    font-weight: bold;
+    margin-left: 6%;
     font-size: 20px;
+    font-weight: bold;
 }
 
+/* 가계부 입력 부분 */
 header {
     margin: 10px;
     width: 100%;
@@ -124,17 +124,14 @@ header {
     background-color: #0061AC;
 }
 
-main {
-    width: 60%;
-    height: 35%;
-}
+/* 표 부분 css */
 
 .layout_main {
     border: 1px solid #b9b9b9;
     border-radius: 30px;
     overflow: hidden;
-    /* margin-right: 5%;
-    margin-top: -38%; */
+    width: 60%;
+    height: 35%;
 }
 
 table {
