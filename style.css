@@ -52,7 +52,7 @@ header {
     width: 90%;
     height: 20%;
     margin-left: 5%;
-    margin-top: 3%;
+    margin-top: 1.5%;
 }
 
 .layout_header {
@@ -193,12 +193,15 @@ table {
 
 /* footer 부분 */
 .layout_footer {
-    width: 70%;
+    background-color: white;
+    width: 90%;
     height: 30%;
-    border: solid red;
+    border: 1px solid #b9b9b9;
+    border-radius: 30px;
     display: flex;
     align-items: stretch;
-    margin-top: -18%;
+    margin-top: 3%;
+    margin-left: 5%;
 }
 .text_tit {
     font-size: 32px;
