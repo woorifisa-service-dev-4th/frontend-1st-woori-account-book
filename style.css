@@ -134,6 +134,7 @@ header {
 
 .layout_main {
     border: 1px solid #b9b9b9;
+    background-color: white;
     border-radius: 30px;
     overflow: hidden;
     width: 90%;
@@ -207,6 +208,7 @@ table {
     font-size: 32px;
 }
 .container_graphwrap {
+    overflow: hidden;
     max-width: 90%;
     margin: 0 auto;
     padding: 20px;
@@ -225,13 +227,16 @@ table {
     bottom: 0;
     height: 16px;
     left: -20px;
-    width: calc(100% - 12px);
+    width: calc(102% - 12px);
     text-align: center;
     z-index: 2;
     list-style-type: none;
 }
 .container_graph .container_x-axis > li {
     font-size: 20px;
+    position: relative; 
+    text-align: center;
+
 }
 .container_graph .container_bar {
     display: flex;
@@ -244,15 +249,17 @@ table {
     height: calc(100% - 16px);
     text-align: center;
     z-index: 3;
+
 }
 .container_graph .container_bar > li {
     flex-grow: 1;
     margin: 0 10px;
     list-style-type: none;
+    bottom: -24px; 
 }
 .container_graph .container_bar > li span {
     display: inline-block;
-    width: 80%;
+    width: 60%;
     height: 100%;
     max-width: 80px;
     background: #41aaff;
