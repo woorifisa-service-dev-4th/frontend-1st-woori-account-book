@@ -34,27 +34,32 @@
                         2025년 1월 3일의 잔고
                     </div>
 
-                    <div class="container_content">
-                        <span>입금/출금</span>
-                        <span>내역</span>
-                        <span>금액</span>
-                        <span>추가하기</span>
-                    </div>
-
                     <div class="container_input">
-                        <select class="container_entry-type">
-                            <option selected>입/출금</option>
-                            <option>입금</option>
-                            <option>출금</option>
-                        </select>
 
-                        <textarea
-                            class="container_entry-description"
-                        ></textarea>
+                        <div class="container_select">
+                            <label for="select">입금/출금</label>
+                            <select id="select" class="container_type-slct">
+                                <option selected>입/출금</option>
+                                <option>입금</option>
+                                <option>출금</option>
+                            </select>
+                        </div>
+                        
+                        <div class="container_description">
+                            <label for="description">내역</label>
+                            <input type="text" name="" id="description">
+                        </div>
 
-                        <textarea class="container_entry-money"></textarea>
-
-                        <button class="container_entry-add-btn">+</button>
+                        <div class="container_money">
+                            <label for="money">금액</label>
+                            <input type="text" name="" id="money">
+                        </div>
+                        
+                        <div class="container_add">
+                            <label for="select">추가</label>
+                            <button id="select" class="container_add-btn">+</button>
+                        </div>
+                        
                     </div>
                 </header>
                 <main class="layout_main">
