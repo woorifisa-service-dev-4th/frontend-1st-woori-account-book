@@ -1,0 +1,38 @@
+html,
+body {
+    height: 100%;
+    background-color: #0061ac;
+}
+
+nav {
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    margin-left: -2%;
+    margin-top: -0.55%;
+    border-radius: 10px;
+}
+
+.img_logo {
+    width: 55px;
+    height: 55px;
+    margin-left: 10%;
+    margin-top: 5%;
+    float: left;
+}
+
+.layout_logo {
+    font-size: 32px;
+    margin-left: 3%;
+    margin-top: 6%;
+    font-weight: bolder;
+}
+
+.container_left_bar {
+    float: left;
+    margin-top: 20%;
+    margin-left: -47%;
+    font-weight: bold;
+    font-size: 20px;
+}
