@@ -66,6 +66,9 @@ https://woorifisa-service-dev-4th.github.io/frontend-1st-woori-account-book/
 ### 📍 UI Layout
 <img width="1552" alt="image" src="https://github.com/user-attachments/assets/375c10b3-44e7-461a-bd24-7528b05a7d2b" />
 
+### 📍 Light house
+<img width="390" alt="image" src="https://github.com/user-attachments/assets/0d33ad71-ca29-445e-9e6b-bae907367b59" />
+
 ### 📍 소감
 | 이름 | 한마디 |
 |:---:|:---|
