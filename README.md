@@ -61,5 +61,5 @@
 
 
 ### 📍 UI Layout
-![main](https://github.com/user-attachments/assets/88d9ae3e-d9a1-44f4-9971-31e373f51e13)
+<img width="1552" alt="image" src="https://github.com/user-attachments/assets/375c10b3-44e7-461a-bd24-7528b05a7d2b" />
 
