@@ -204,6 +204,7 @@ table {
     border: 1px solid #b9b9b9;
     border-collapse: collapse;
     background-color: white;
+    height: 40px;
 }
 
 .contianer_table_contents td {
@@ -252,9 +253,8 @@ table {
 }
 .container_graph .container_x-axis > li {
     font-size: 20px;
-    position: relative; 
+    position: relative;
     text-align: center;
-
 }
 .container_graph .container_bar {
     display: flex;
@@ -267,13 +267,12 @@ table {
     height: calc(100% - 16px);
     text-align: center;
     z-index: 3;
-
 }
 .container_graph .container_bar > li {
     flex-grow: 1;
     margin: 0 10px;
     list-style-type: none;
-    bottom: -24px; 
+    bottom: -24px;
 }
 .container_graph .container_bar > li span {
     display: inline-block;
