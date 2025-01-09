@@ -4,6 +4,12 @@ const dateDescBtn = document.createElement("button");
 const typeAscBtn = document.createElement("button");
 const typeDescBtn = document.createElement("button");
 
+// 버튼에 class 설정
+dateAscBtn.classList.add("date-asc-btn");
+dateDescBtn.classList.add("date-desc-btn");
+typeAscBtn.classList.add("type-asc-btn");
+typeDescBtn.classList.add("type-desc-btn");
+
 // 버튼 텍스트 설정
 dateAscBtn.textContent = " 🔼";
 dateDescBtn.textContent = "🔽";
