@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <style>
+            body {
+                font-family: "Noto Sans KR", sans-serif;
+            }
+        </style>
+        <script defer src="input.js"></script>
+        <title>우리가계부</title>
+        <script defer src="sort.js"></script>
+        <script defer src="modal.js"></script>
+        <script defer src="graph.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="layout_left">
+                <div class="layout_left_logo">
+                    <img src="logo.png" class="img_logo" />
+                    <p class="layout_logo">우리가계부</p>
+                </div>
+                <div class="container_left_bar">
+                    <p class="container_home">HOME</p>
+                    <p class="container_table_modal">TABLE</p>
+                </div>
+                <dialog id="dialog-1"></dialog>
+            </nav>
+
+            <div class="layout_right">
+                <header class="layout_header">
+                    <div class="container_entry-date">
+                        <input
+                            type="date"
+                            id="date"
+                            max="2025-06-17"
+                            min="2024-12-30"
+                            value="2025-01-10"
+                        />
+                        <span id="date-text">의 잔고</span>
+                    </div>
+
+                    <div class="container_input">
+                        <div class="container_select">
+                            <label for="select">입금/출금</label>
+                            <select id="select" class="container_type-slct">
+                                <option selected>입/출금</option>
+                                <option value="입금">입금</option>
+                                <option value="출금">출금</option>
+                            </select>
+                        </div>
+
+                        <div class="container_description">
+                            <label for="description">내역</label>
+                            <input
+                                type="text"
+                                maxlength="20"
+                                name=""
+                                id="description"
+                            />
+                        </div>
+
+                        <div class="container_money">
+                            <label for="money">금액</label>
+                            <input type="number" name="" id="money" />
+                        </div>
+
+                        <div class="container_add">
+                            <label for="select">추가</label>
+                            <button id="select" class="container_add-btn">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </header>
+                <main class="layout_main">
+                    <div style="width: 100%; height: 100%; overflow-y: scroll">
+                        <table class="container_table">
+                            <thead style="height: 50px">
+                                <tr class="container_table_row">
+                                    <td class="layout_date">날짜</td>
+                                    <td class="layout_type">입금/출금</td>
+                                    <td class="layout_text">내역</td>
+                                    <td class="layout_money">금액</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="container_table_contents">
+                                    <td>2025-01-01</td>
+                                    <td>출금</td>
+                                    <td>커피</td>
+                                    <td>2000</td>
+                                </tr>
+                                <tr class="container_table_contents">
+                                    <td>2025-01-02</td>
+                                    <td>출금</td>
+                                    <td>커피</td>
+                                    <td>2000</td>
+                                </tr>
+                                <tr class="container_table_contents">
+                                    <td>2025-01-02</td>
+                                    <td>입금</td>
+                                    <td>용돈</td>
+                                    <td>200000</td>
+                                </tr>
+                                <tr class="container_table_contents">
+                                    <td>2025-01-03</td>
+                                    <td>출금</td>
+                                    <td>밥</td>
+                                    <td>12000</td>
+                                </tr>
+                                <tr class="container_table_contents">
+                                    <td>2025-01-04</td>
+                                    <td>출금</td>
+                                    <td>사탕</td>
+                                    <td>3000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </main>
+                <footer class="layout_footer">
+                    <div class="container_graphwrap">
+                        <div class="container_graph_title">
+                            <strong class="text_tit">월별 소비 그래프</strong>
+                            <p class="text_income">입금</p>
+                            <p class="text_expense">출금</p>
+                        </div>
+                        <div class="container_graph">
+                            <ul class="container_bar" id="graph-bars">
+                                <!-- 그래프 데이터가 동적으로 추가될 부분 -->
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>

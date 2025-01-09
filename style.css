@@ -1,0 +1,511 @@
+html,
+body {
+    background-color: #0061ac;
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+nav {
+    width: 20%;
+    height: 100%;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.layout_left_logo {
+    display: flex;
+    margin-left: 5%;
+}
+
+.img_logo {
+    width: 55px;
+    height: 55px;
+    margin-top: 5%;
+}
+
+.layout_logo {
+    font-size: 32px;
+    margin-left: 3%;
+    margin-top: 6%;
+    font-weight: bolder;
+}
+
+.container_left_bar {
+    margin-left: 6%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.layout_right {
+    width: 80%;
+}
+
+/* 가계부 입력 부분 */
+header {
+    width: 90%;
+    height: 20%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.layout_header {
+    background-color: #ffffff;
+    border: 1px solid #b9b9b9;
+    border-radius: 30px;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.container_entry-date {
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
+#date {
+    width: 130px;
+    height: 28px;
+    line-height: 1;
+    margin-top: -100px;
+}
+
+.container_input {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    margin: 1% 0% 5% 3%;
+}
+
+.container_select {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    width: 15%;
+    height: auto;
+}
+
+.container_type-slct {
+    width: 100%;
+    height: 80%;
+    margin-top: 0.3em;
+    display: block;
+    font-size: 13px;
+    text-align: center;
+    color: #000000;
+    border: 0.8px solid #000000;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container_description {
+    margin-left: 0.6rem;
+    margin-right: 0.5rem;
+    width: 30%;
+    input {
+        width: 100%;
+        height: 75%;
+        margin-top: 0.3em;
+        display: block;
+        font-size: 15px;
+        color: #000000;
+        border: 0.8px solid #000000;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.container_money {
+    margin-left: 0.8rem;
+    margin-right: 0.5rem;
+    width: 30%;
+    height: 100%;
+    input {
+        width: 100%;
+        height: 75%;
+        margin-top: 0.3em;
+        display: block;
+        font-size: 15px;
+        color: #000000;
+        border: 0.8px solid #000000;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.container_add {
+    margin-left: 0.8rem;
+    margin-right: 3rem;
+    width: 10%;
+}
+
+.container_add-btn {
+    width: 90%;
+    height: 80%;
+    display: block;
+    margin-top: 0.3em;
+    font-size: 18px;
+    color: #ffffff;
+    border: 0.5px solid hsl(206, 100%, 34%);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #0061ac;
+}
+
+.container_add-btn:hover {
+    background-color: #337bcc;
+}
+
+.container_add-btn:active {
+    transform: scale(0.9); /* 크기 살짝 확대 */
+}
+
+/* 모달창 부분 css */
+dialog {
+    width: 60%;
+    height: 60%;
+    border: solid 2px #007bff;
+    padding: 20px;
+    background: #fff;
+}
+
+/* 모달 내 테이블 스타일 */
+.modal-table {
+    border-spacing: 0px;
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-style: hidden;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.modal-table .container_table_row {
+    background-color: #b9b9b9;
+    border: 1px solid #b9b9b9;
+    font-weight: bold;
+}
+
+/* 모달 내 테이블 셀 스타일 */
+.modal-table th {
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.modal-table .layout_date,
+.modal-table .layout_type,
+.modal-table .layout_text,
+.modal-table .layout_money {
+    width: 20%;
+}
+
+/* 테이블 셀 구분선 */
+.modal-table .container_table_row td {
+    border: 1px solid #949494;
+}
+
+.modal-table .contianer_table_contents {
+    border: 1px solid #b9b9b9;
+    border-collapse: collapse;
+    background-color: white;
+    height: 40px;
+}
+
+.modal-table .contianer_table_contents td {
+    border: 1px solid #949494;
+}
+
+/* 정렬 버튼 디자인 */
+.modal-table .date-asc-btn,
+.modal-table .date-desc-btn,
+.modal-table .type-asc-btn,
+.modal-table .type-desc-btn {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 1px;
+    transition: transform 0.2s, color 0.3s;
+}
+
+.modal-table .date-asc-btn:hover,
+.modal-table .date-desc-btn:hover,
+.modal-table .type-asc-btn:hover,
+.modal-table .type-desc-btn:hover {
+    color: #007bff;
+    transform: scale(1.2);
+}
+
+.modal-table .date-asc-btn:active,
+.modal-table .date-desc-btn:active,
+.modal-table .type-asc-btn:active,
+.modal-table .type-desc-btn:active {
+    transform: scale(1.1);
+    color: #0056b3;
+}
+
+/* 반응형 화면 크기에서 버튼 크기 조정 */
+@media (max-width: 768px) {
+    .modal-table button {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}
+
+/* 표 부분 css */
+.layout_main {
+    border: 1px solid #b9b9b9;
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 90%;
+    height: 35%;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+table {
+    border-spacing: 0px;
+    border-radius: 30px;
+}
+
+.container_table {
+    border-style: hidden;
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.container_table_row {
+    background-color: #b9b9b9;
+    border: 1px solid #b9b9b9;
+    font-weight: bold;
+}
+
+/* 정렬 버튼 디자인 */
+/* 버튼 기본 스타일 */
+.date-asc-btn,
+.date-desc-btn,
+.type-asc-btn,
+.type-desc-btn {
+    background: none; /* 배경 제거 */
+    border: none; /* 테두리 제거 */
+    color: #333; /* 이모지 색상 */
+    font-size: 20px; /*이모지 크기 */
+    cursor: pointer; /* 클릭 가능한 커서 */
+    padding: 1px; /* 클릭 영역 확보 */
+    transition: transform 0.2s, color 0.3s; /* 애니메이션 효과 */
+}
+
+/* 마우스를 올렸을 때 */
+.date-asc-btn:hover,
+.date-desc-btn:hover,
+.type-asc-btn:hover,
+.type-desc-btn:hover {
+    color: #007bff; /* 이모지 색상 변경 (파란색) */
+    transform: scale(1.2); /* 크기 살짝 확대 */
+}
+
+/* 클릭했을 때 */
+.date-asc-btn:active,
+.date-desc-btn:active,
+.type-asc-btn:active,
+.type-desc-btn:active {
+    transform: scale(1.1); /* 크기 약간 축소 */
+    color: #0056b3; /* 색상 더 어둡게 */
+}
+
+/* 테이블 셀 스타일 */
+th {
+    position: relative; /* 버튼 위치 조정을 위한 기준점 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    vertical-align: middle; /* 텍스트 수직 정렬 */
+    padding: 10px; /* 셀 간격 */
+}
+
+/* 화면 크기에 따라 버튼 크기 조정 (반응형) */
+@media (max-width: 768px) {
+    button {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}
+
+.layout_date {
+    width: 20%;
+}
+
+.layout_type {
+    width: 20%;
+}
+
+.layout_text {
+    width: 35%;
+}
+
+.layout_money {
+    width: 35%;
+}
+
+.container_table_row td {
+    border: 1px solid #949494;
+}
+
+.container_table_contents {
+    border: 1px solid #b9b9b9;
+    border-collapse: collapse;
+    background-color: white;
+    height: 40px;
+}
+
+.container_table_contents td {
+    border: 1px solid #949494;
+}
+
+/* footer 부분 */
+.layout_footer {
+    background-color: white;
+    width: 90%;
+    height: 30%;
+    border: 1px solid #b9b9b9;
+    border-radius: 30px;
+    display: flex;
+    align-items: stretch;
+    margin-top: 2%;
+    margin-left: 5%;
+    padding-top: 20px; /* 추가: 위쪽 여백을 설정하여 푸터 글씨 공간 확보 */
+}
+
+.text_tit {
+    font-size: 32px;
+    margin-bottom: 20px; /* 푸터 텍스트와 그래프 사이 여백 */
+}
+
+.container_graphwrap {
+    overflow: hidden;
+    max-width: 90%;
+    margin: 0 auto;
+    /* padding: 20px; */
+    flex-grow: 1;
+}
+
+.container_graph_title {
+    display: flex;
+}
+
+.text_income {
+    background-color: #41aaff;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    margin-left: 2%;
+    height: 3vh;
+    text-align: center;
+    padding: 0.5%;
+}
+
+.text_expense {
+    background-color: #f07272;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    margin-left: 1%;
+    height: 3vh;
+    text-align: center;
+    padding: 0.5%;
+}
+
+.container_graph {
+    position: relative;
+    height: calc(
+        100% - 50px
+    ); /* 푸터 텍스트와 그래프 사이 공간을 고려하여 높이 조정 */
+    margin-top: 15px;
+}
+
+.container_graph .container_x-axis {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    height: 16px;
+    left: -20px;
+    width: calc(102% - 12px);
+    text-align: center;
+    z-index: 2;
+    list-style-type: none;
+}
+
+.container_graph .container_x-axis > li {
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.container_graph .container_bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 16px;
+    left: -20px;
+    width: calc(100% - 12px);
+    height: calc(100% - 16px);
+    text-align: center;
+    z-index: 3;
+}
+
+.container_graph .container_bar > li {
+    flex-grow: 1;
+    margin: 0 10px;
+    list-style-type: none;
+    bottom: -24px;
+    width: 10vw;
+}
+
+/* 입금과 출금 색상 지정 */
+.container_graph .container_bar > li span.income {
+    background-color: #f07272; /* 입금은 빨간색 */
+}
+
+.container_graph .container_bar > li span.expense {
+    background-color: #41aaff; /* 출금은 파란색 */
+}
+
+/* 그래프의 레이블 */
+.container_graph .container_bar > li span.bar-label {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* bar-amount 기본 상태에서는 숨김 */
+.bar-amount {
+    display: none; /* 기본적으로 텍스트 숨김 */
+    position: absolute;
+    top: -2em; /* 막대 위로 텍스트 위치 */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 0.2em 0.5em;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+/* 막대 그래프 위로 마우스 커서가 올라왔을 때 텍스트 표시 */
+.container_bar > li div:hover .bar-amount {
+    display: block;
+}

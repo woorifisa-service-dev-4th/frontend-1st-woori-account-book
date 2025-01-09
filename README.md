@@ -1,7 +1,7 @@
 # 우리 FISA Frontend Toy Project
 
 ## 💵 서비스 소개
-우리 FISA 서비스 개발 과정 토이프로젝트로, html과 css를 활용한 가계부 페이지입니다.
+우리 FISA 서비스 개발 과정 토이프로젝트로 html, css와 js를 활용한 가계부 페이지입니다.
 
 ### 📍 site
 https://woorifisa-service-dev-4th.github.io/frontend-1st-woori-account-book/
@@ -64,7 +64,7 @@ https://woorifisa-service-dev-4th.github.io/frontend-1st-woori-account-book/
 
 
 ### 📍 UI Layout
-<img width="1552" alt="image" src="https://github.com/user-attachments/assets/375c10b3-44e7-461a-bd24-7528b05a7d2b" />
+<img width="1552" alt="image" src="https://github.com/user-attachments/assets/46e92191-8ccb-466c-b4c9-98a3d5c9a3f3" />
 
 ### 📍 Light house
 <img width="390" alt="image" src="https://github.com/user-attachments/assets/0d33ad71-ca29-445e-9e6b-bae907367b59" />
