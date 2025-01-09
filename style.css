@@ -165,8 +165,103 @@ header {
     transform: scale(0.9); /* 크기 살짝 확대 */
 }
 
-/* 표 부분 css */
+/* 모달창 부분 css */
+dialog {
+    width: 60%;
+    height: 60%;
+    border: solid 2px #007bff;
+    padding: 20px;
+    background: #fff;
+}
 
+/* 모달 내 테이블 스타일 */
+.modal-table {
+    border-spacing: 0px;
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-style: hidden;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.modal-table .container_table_row {
+    background-color: #b9b9b9;
+    border: 1px solid #b9b9b9;
+    font-weight: bold;
+}
+
+/* 모달 내 테이블 셀 스타일 */
+.modal-table th {
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.modal-table .layout_date,
+.modal-table .layout_type,
+.modal-table .layout_text,
+.modal-table .layout_money {
+    width: 20%;
+}
+
+/* 테이블 셀 구분선 */
+.modal-table .container_table_row td {
+    border: 1px solid #949494;
+}
+
+.modal-table .contianer_table_contents {
+    border: 1px solid #b9b9b9;
+    border-collapse: collapse;
+    background-color: white;
+    height: 40px;
+}
+
+.modal-table .contianer_table_contents td {
+    border: 1px solid #949494;
+}
+
+/* 정렬 버튼 디자인 */
+.modal-table .date-asc-btn,
+.modal-table .date-desc-btn,
+.modal-table .type-asc-btn,
+.modal-table .type-desc-btn {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 1px;
+    transition: transform 0.2s, color 0.3s;
+}
+
+.modal-table .date-asc-btn:hover,
+.modal-table .date-desc-btn:hover,
+.modal-table .type-asc-btn:hover,
+.modal-table .type-desc-btn:hover {
+    color: #007bff;
+    transform: scale(1.2);
+}
+
+.modal-table .date-asc-btn:active,
+.modal-table .date-desc-btn:active,
+.modal-table .type-asc-btn:active,
+.modal-table .type-desc-btn:active {
+    transform: scale(1.1);
+    color: #0056b3;
+}
+
+/* 반응형 화면 크기에서 버튼 크기 조정 */
+@media (max-width: 768px) {
+    .modal-table button {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}
+
+/* 표 부분 css */
 .layout_main {
     border: 1px solid #b9b9b9;
     background-color: white;
@@ -183,7 +278,7 @@ table {
     border-radius: 30px;
 }
 
-.contianer_table {
+.container_table {
     border-style: hidden;
     border-collapse: collapse;
     width: 100%;
@@ -266,14 +361,14 @@ th {
     border: 1px solid #949494;
 }
 
-.contianer_table_contents {
+.container_table_contents {
     border: 1px solid #b9b9b9;
     border-collapse: collapse;
     background-color: white;
     height: 40px;
 }
 
-.contianer_table_contents td {
+.container_table_contents td {
     border: 1px solid #949494;
 }
 
