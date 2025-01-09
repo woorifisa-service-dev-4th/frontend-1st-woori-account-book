@@ -381,22 +381,29 @@ th {
     border-radius: 30px;
     display: flex;
     align-items: stretch;
-    margin-top: 3%;
+    margin-top: 2%;
     margin-left: 5%;
+    padding-top: 20px; /* 추가: 위쪽 여백을 설정하여 푸터 글씨 공간 확보 */
 }
+
 .text_tit {
     font-size: 32px;
+    margin-bottom: 20px; /* 푸터 텍스트와 그래프 사이 여백 */
 }
+
 .container_graphwrap {
     overflow: hidden;
     max-width: 90%;
     margin: 0 auto;
-    padding: 20px;
+    /* padding: 20px; */
     flex-grow: 1;
 }
+
 .container_graph {
     position: relative;
-    height: 80%;
+    height: calc(
+        100% - 50px
+    ); /* 푸터 텍스트와 그래프 사이 공간을 고려하여 높이 조정 */
     margin-top: 15px;
 }
 
@@ -412,11 +419,13 @@ th {
     z-index: 2;
     list-style-type: none;
 }
+
 .container_graph .container_x-axis > li {
     font-size: 20px;
     position: relative;
     text-align: center;
 }
+
 .container_graph .container_bar {
     display: flex;
     justify-content: space-around;
@@ -429,16 +438,30 @@ th {
     text-align: center;
     z-index: 3;
 }
+
 .container_graph .container_bar > li {
     flex-grow: 1;
     margin: 0 10px;
     list-style-type: none;
     bottom: -24px;
+    width: 10vw;
 }
-.container_graph .container_bar > li span {
-    display: inline-block;
-    width: 60%;
-    height: 100%;
-    max-width: 80px;
-    background: #41aaff;
+
+/* 입금과 출금 색상 지정 */
+.container_graph .container_bar > li span.income {
+    background-color: #f07272; /* 입금은 빨간색 */
+}
+
+.container_graph .container_bar > li span.expense {
+    background-color: #41aaff; /* 출금은 파란색 */
+}
+
+/* 그래프의 레이블 */
+.container_graph .container_bar > li span.bar-label {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+    margin-top: 10px;
+    font-weight: bold;
 }
