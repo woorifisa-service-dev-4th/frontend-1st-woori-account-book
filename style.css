@@ -399,6 +399,30 @@ th {
     flex-grow: 1;
 }
 
+.container_graph_title {
+    display: flex;
+}
+
+.text_income {
+    background-color: #41aaff;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    margin-left: 2%;
+    height: 3vh;
+    text-align: center;
+    padding: 0.5%;
+}
+
+.text_expense {
+    background-color: #f07272;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    margin-left: 1%;
+    height: 3vh;
+    text-align: center;
+    padding: 0.5%;
+}
+
 .container_graph {
     position: relative;
     height: calc(
@@ -464,4 +488,24 @@ th {
     color: black;
     margin-top: 10px;
     font-weight: bold;
+}
+
+/* bar-amount 기본 상태에서는 숨김 */
+.bar-amount {
+    display: none; /* 기본적으로 텍스트 숨김 */
+    position: absolute;
+    top: -2em; /* 막대 위로 텍스트 위치 */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 0.2em 0.5em;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+/* 막대 그래프 위로 마우스 커서가 올라왔을 때 텍스트 표시 */
+.container_bar > li div:hover .bar-amount {
+    display: block;
 }
