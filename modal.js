@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 newModalTable.classList.add("modal-table");
                 newModalTable.innerHTML = tableContents.innerHTML;
                 dialogOne.appendChild(newModalTable); // 새로 만든 테이블 추가
+                console.log(dialogOne);
 
                 // 테이블을 새로 추가했으므로 정렬 기능을 다시 설정
                 addSortButtons(newModalTable);
@@ -64,26 +65,32 @@ document.addEventListener("DOMContentLoaded", () => {
         const typeDescBtn = modalTable.querySelector(".type-desc-btn");
 
         const tbody = modalTable.querySelector("tbody");
+        console.log(tbody);
 
         // 날짜 정렬 버튼에 클릭 이벤트 추가
         dateAscBtn.addEventListener("click", () => {
-            sortTable(tbody, 0, true, true); // 첫 번째 열(날짜) 오름차순 정렬
+            sortTable(0, true, true); // 첫 번째 열(날짜) 오름차순 정렬
+            console.log("날짜 오름차순 정렬 호출됨");
         });
         dateDescBtn.addEventListener("click", () => {
-            sortTable(tbody, 0, false, true); // 첫 번째 열(날짜) 내림차순 정렬
+            sortTable(0, false, true); // 첫 번째 열(날짜) 내림차순 정렬
+            console.log("날짜 내림차순 정렬 호출됨");
         });
 
         // 입/출금 정렬 버튼에 클릭 이벤트 추가
         typeAscBtn.addEventListener("click", () => {
-            sortTable(tbody, 1, true, false); // 두 번째 열(입/출금) 오름차순 정렬
+            sortTable(1, true, false); // 두 번째 열(입/출금) 오름차순 정렬
+            console.log("입/출금 오름차순 정렬 호출됨");
         });
         typeDescBtn.addEventListener("click", () => {
-            sortTable(tbody, 1, false, false); // 두 번째 열(입/출금) 내림차순 정렬
+            sortTable(1, false, false); // 두 번째 열(입/출금) 내림차순 정렬
+            console.log("입/출금 내림차순 정렬 호출됨");
         });
     };
 
     // 공통 정렬 함수
-    function sortTable(tbody, columnIndex, isAscending, isDateSort = false) {
+    function sortTable(columnIndex, isAscending, isDateSort = false) {
+        const tbody = document.querySelector("tbody");
         // tbody 안의 모든 행을 가져오기
         const rows = Array.from(tbody.querySelectorAll("tr"));
 
