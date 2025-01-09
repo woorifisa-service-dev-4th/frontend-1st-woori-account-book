@@ -64,15 +64,19 @@ function sortTable(columnIndex, isAscending, isDateSort = false) {
 // 날짜 정렬 버튼에 클릭 이벤트 추가
 dateAscBtn.addEventListener("click", () => {
     sortTable(0, true, true); // 첫 번째 열(날짜) 오름차순 정렬
+    console.log("날짜 오름차순 정렬 호출됨");
 });
 dateDescBtn.addEventListener("click", () => {
     sortTable(0, false, true); // 첫 번째 열(날짜) 내림차순 정렬
+    console.log("날짜 내림차순 정렬 호출됨");
 });
 
 // 입/출금 정렬 버튼에 클릭 이벤트 추가
 typeAscBtn.addEventListener("click", () => {
     sortTable(1, true, false); // 두 번째 열(입/출금) 오름차순 정렬
+    console.log("입/출금 오름차순 정렬 호출됨");
 });
 typeDescBtn.addEventListener("click", () => {
     sortTable(1, false, false); // 두 번째 열(입/출금) 내림차순 정렬
+    console.log("입/출금 내림차순 정렬 호출됨");
 });
