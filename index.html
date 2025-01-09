@@ -13,6 +13,7 @@
                 font-family: "Noto Sans KR", sans-serif;
             }
         </style>
+        <script defer src = "input.js"></script>
         <title>Document</title>
         <script defer src="sort.js"></script>
     </head>
@@ -32,7 +33,13 @@
             <div class="layout_right">
                 <header class="layout_header">
                     <div class="container_entry-date">
-                        2025년 1월 3일의 잔고
+                        <input type="date"
+                            id = "date"
+                            max="2025-06-17"
+                            min="2024-12-30"
+                            value="2025-01-10"
+                        >
+                        <span id= "date-text">의 잔고</span>
                     </div>
 
                     <div class="container_input">
@@ -40,8 +47,8 @@
                             <label for="select">입금/출금</label>
                             <select id="select" class="container_type-slct">
                                 <option selected>입/출금</option>
-                                <option>입금</option>
-                                <option>출금</option>
+                                <option value="입금">입금</option>
+                                <option value="출금">출금</option>
                             </select>
                         </div>
 
