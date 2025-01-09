@@ -69,6 +69,13 @@ header {
     margin-top: 1%;
 }
 
+#date {
+    width: 130px;
+    height: 28px;
+    line-height: 1;
+    margin-top: -100px;
+}
+
 .container_input {
     display: flex;
     width: 100%;
@@ -102,11 +109,11 @@ header {
     width: 30%;
     input {
         width: 100%;
-        height: 80%;
+        height: 75%;
         margin-top: 0.3em;
         display: block;
         font-size: 15px;
-        color: #b9b9b9;
+        color: #000000;
         border: 0.8px solid #000000;
         border-radius: 5px;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -120,11 +127,11 @@ header {
     height: 100%;
     input {
         width: 100%;
-        height: 80%;
+        height: 75%;
         margin-top: 0.3em;
         display: block;
         font-size: 15px;
-        color: #b9b9b9;
+        color: #000000;
         border: 0.8px solid #000000;
         border-radius: 5px;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -144,10 +151,18 @@ header {
     margin-top: 0.3em;
     font-size: 18px;
     color: #ffffff;
-    border: 0.5px solid #0061ac;
+    border: 0.5px solid hsl(206, 100%, 34%);
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     background-color: #0061ac;
+}
+
+.container_add-btn:hover {
+    background-color: #337bcc;
+}
+
+.container_add-btn:active {
+    transform: scale(0.9); /* 크기 살짝 확대 */
 }
 
 /* 표 부분 css */
