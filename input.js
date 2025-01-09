@@ -1,5 +1,5 @@
 const dateInput = document.getElementById("date");
-const [selectOption] = document.getElementsByTagName('select');
+const [selectOption] = document.getElementsByTagName("select");
 const descriptionInput = document.getElementById("description");
 const moneyInput = document.getElementById("money");
 const addButtonInput = document.getElementsByClassName("container_add-btn")[0];
@@ -12,45 +12,40 @@ let moneyValue = moneyInput.value;
 console.log(dateValue);
 
 /* 입력 값 저장 */
-dateInput.addEventListener('input', (event) => {
+dateInput.addEventListener("input", (event) => {
     dateValue = event.target.value;
 
-    if(!dateValue) {
-        alert("날짜를 입력해주세요.")
+    if (!dateValue) {
+        alert("날짜를 입력해주세요.");
         dateInput.focus();
         return;
     }
     console.log(dateValue);
-})
+});
 
-selectOption.addEventListener('change', (event) => {
+selectOption.addEventListener("change", (event) => {
     selectedOption = event.target.value;
     console.log(selectedOption);
-})
+});
 
-descriptionInput.addEventListener('input', (event) => {
-
+descriptionInput.addEventListener("input", (event) => {
     descriptionValue = event.target.value.trim();
     console.log(descriptionValue);
+});
 
-})
-
-moneyInput.addEventListener('input', (event) => {
-
+moneyInput.addEventListener("input", (event) => {
     moneyValue = event.target.value.trim();
     console.log(moneyValue);
-
-})
-
+});
 
 /* 추가 버튼 누를 시 필요한 입력 값들 TABLE에 전달 */
-addButtonInput.addEventListener('click', () => {
+addButtonInput.addEventListener("click", () => {
     // 테이블의 tbody 선택
-    const tableBody = document.querySelector(".contianer_table tbody");
+    const tableBody = document.querySelector(".container_table tbody");
 
     // 새로운 행 생성
     const newRow = document.createElement("tr");
-    newRow.className = "contianer_table_contents";
+    newRow.className = "container_table_contents";
 
     // 각 열 생성 및 데이터 추가
     const dateCell = document.createElement("td");
@@ -100,9 +95,7 @@ addButtonInput.addEventListener('click', () => {
     descriptionValue = "";
     moneyValue = "";
 
-
     alert("데이터가 성공적으로 추가되었습니다.");
-
-})
+});
 
 /* 추가 버튼 누를 시 필요한 입력 값들 GRAPH에 전달 */

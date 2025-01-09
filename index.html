@@ -16,6 +16,7 @@
         <script defer src="input.js"></script>
         <title>Document</title>
         <script defer src="sort.js"></script>
+        <script defer src="modal.js"></script>
     </head>
     <body>
         <div class="container">
@@ -26,8 +27,9 @@
                 </div>
                 <div class="container_left_bar">
                     <p class="container_home">HOME</p>
-                    <p class="container_table">TABLE</p>
+                    <p class="container_table_modal">TABLE</p>
                 </div>
+                <dialog id="dialog-1"></dialog>
             </nav>
 
             <div class="layout_right">
@@ -78,7 +80,7 @@
                 </header>
                 <main class="layout_main">
                     <div style="width: 100%; height: 100%; overflow-y: scroll">
-                        <table class="contianer_table">
+                        <table class="container_table">
                             <thead style="height: 50px">
                                 <tr class="container_table_row">
                                     <td class="layout_date">날짜</td>
@@ -88,31 +90,31 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr class="contianer_table_contents">
+                                <tr class="container_table_contents">
                                     <td>2025-01-01</td>
                                     <td>출금</td>
                                     <td>커피</td>
                                     <td>2000</td>
                                 </tr>
-                                <tr class="contianer_table_contents">
+                                <tr class="container_table_contents">
                                     <td>2025-01-02</td>
                                     <td>출금</td>
                                     <td>커피</td>
                                     <td>2000</td>
                                 </tr>
-                                <tr class="contianer_table_contents">
+                                <tr class="container_table_contents">
                                     <td>2025-01-02</td>
                                     <td>입금</td>
                                     <td>용돈</td>
                                     <td>200000</td>
                                 </tr>
-                                <tr class="contianer_table_contents">
+                                <tr class="container_table_contents">
                                     <td>2025-01-03</td>
                                     <td>출금</td>
                                     <td>밥</td>
                                     <td>12000</td>
                                 </tr>
-                                <tr class="contianer_table_contents">
+                                <tr class="container_table_contents">
                                     <td>2025-01-04</td>
                                     <td>출금</td>
                                     <td>사탕</td>
