@@ -182,6 +182,46 @@ table {
     font-weight: bold;
 }
 
+/* 정렬 버튼 디자인 */
+/* 버튼 기본 스타일 */
+button {
+    background: none; /* 배경 제거 */
+    border: none; /* 테두리 제거 */
+    color: #333; /* 이모지 색상 */
+    font-size: 20px; /*이모지 크기 */
+    cursor: pointer; /* 클릭 가능한 커서 */
+    padding: 1px; /* 클릭 영역 확보 */
+    transition: transform 0.2s, color 0.3s; /* 애니메이션 효과 */
+}
+
+/* 마우스를 올렸을 때 */
+button:hover {
+    color: #007bff; /* 이모지 색상 변경 (파란색) */
+    transform: scale(1.2); /* 크기 살짝 확대 */
+}
+
+/* 클릭했을 때 */
+button:active {
+    transform: scale(1.1); /* 크기 약간 축소 */
+    color: #0056b3; /* 색상 더 어둡게 */
+}
+
+/* 테이블 셀 스타일 */
+th {
+    position: relative; /* 버튼 위치 조정을 위한 기준점 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    vertical-align: middle; /* 텍스트 수직 정렬 */
+    padding: 10px; /* 셀 간격 */
+}
+
+/* 화면 크기에 따라 버튼 크기 조정 (반응형) */
+@media (max-width: 768px) {
+    button {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}
+
 .layout_date {
     width: 20%;
 }
