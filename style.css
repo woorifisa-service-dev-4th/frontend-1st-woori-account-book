@@ -184,7 +184,10 @@ table {
 
 /* 정렬 버튼 디자인 */
 /* 버튼 기본 스타일 */
-button {
+.date-asc-btn,
+.date-desc-btn,
+.type-asc-btn,
+.type-desc-btn {
     background: none; /* 배경 제거 */
     border: none; /* 테두리 제거 */
     color: #333; /* 이모지 색상 */
@@ -195,13 +198,19 @@ button {
 }
 
 /* 마우스를 올렸을 때 */
-button:hover {
+.date-asc-btn:hover,
+.date-desc-btn:hover,
+.type-asc-btn:hover,
+.type-desc-btn:hover {
     color: #007bff; /* 이모지 색상 변경 (파란색) */
     transform: scale(1.2); /* 크기 살짝 확대 */
 }
 
 /* 클릭했을 때 */
-button:active {
+.date-asc-btn:active,
+.date-desc-btn:active,
+.type-asc-btn:active,
+.type-desc-btn:active {
     transform: scale(1.1); /* 크기 약간 축소 */
     color: #0056b3; /* 색상 더 어둡게 */
 }
