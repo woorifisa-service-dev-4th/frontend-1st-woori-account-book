@@ -1,4 +1,4 @@
-// 날짜와 입/출금 정렬 버튼 요소를 가져옵니다.
+// 날짜와 입/출금 정렬 버튼 요소를 가져오기
 const dateAscBtn = document.createElement("button");
 const dateDescBtn = document.createElement("button");
 const typeAscBtn = document.createElement("button");
@@ -25,15 +25,15 @@ sortDate.appendChild(dateDescBtn);
 sortType.appendChild(typeAscBtn);
 sortType.appendChild(typeDescBtn);
 
-// 테이블의 tbody 요소를 가져옵니다.
+// 테이블의 tbody 요소를 가져오기
 const tbody = document.querySelector("tbody");
 
 // 공통 정렬 함수
 function sortTable(columnIndex, isAscending, isDateSort = false) {
-    // tbody 안의 모든 행을 가져옵니다.
+    // tbody 안의 모든 행을 가져오기
     const rows = Array.from(tbody.querySelectorAll("tr"));
 
-    // 행을 정렬합니다.
+    // 행 정렬
     const sortedRows = rows.sort((rowA, rowB) => {
         const cellA = rowA.cells[columnIndex].textContent;
         const cellB = rowB.cells[columnIndex].textContent;
@@ -51,7 +51,7 @@ function sortTable(columnIndex, isAscending, isDateSort = false) {
         }
     });
 
-    // 정렬된 행을 tbody에 다시 추가합니다.
+    // 정렬된 행을 tbody에 다시 추가
     sortedRows.forEach((row) => tbody.appendChild(row));
 }
 
